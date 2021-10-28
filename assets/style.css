@@ -41,3 +41,36 @@ body{
     transform: translateX(-50%);
     z-index: -1;
 }
+
+.pricing-card{
+    max-width: 540px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    background-color: white;
+}
+
+.pricing{
+    padding: 40px 48px 56px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    margin-bottom: 32px;
+}
+
+.price h1{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #848ead;
+}
+
+.price p{
+    display: flex;
+    align-items: center;
+    color: #848ead;
+}
