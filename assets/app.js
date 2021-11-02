@@ -53,3 +53,7 @@ slider.addEventListener('input', ()=>{
     selector.style.transform = `transtalteX(-${percentage})`;
 
 });
+
+bilingType.addEventListener('change', ()=>{
+    getPrice();
+})
