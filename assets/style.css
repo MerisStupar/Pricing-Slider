@@ -201,3 +201,32 @@ input:checked[type="checkbox"]::before{
 hr{
     border: 1px solid #ecf0fb;
 }
+.cta{
+    display: flex;
+    padding: 32px 48px;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+button{
+    cursor: pointer;
+    padding: 12px 46px;
+    color: #becdff;
+    background-color: #293356 ;
+    border-radius: 25px;
+    border: none;
+}
