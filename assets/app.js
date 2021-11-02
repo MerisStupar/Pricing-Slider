@@ -23,3 +23,33 @@ const getPrice = ()=>{
     });
 }
 
+//Input change
+slider.addEventListener('input', ()=>{
+    
+    //Call function to obtain currency value
+    getPrice();
+
+    //Calc page views based on slider value input
+    if(parseInt(slider.value) === 0){
+        const freeVersion = 10000;
+        pageViews.innerHTML = freeVersion.toLocaleString();
+    }
+    else{
+        const newValue = slider.value * 10000;
+        pageViews.innerHTML = newValue.toLocaleString();
+    }
+
+    //Max value
+    const maxValue = slider.getAttribute('max');
+
+    //Percentage
+    const percentage = (slider.value / maxValue) * 100;
+    
+    //Slider filled 
+    sliderFilled.style.width = `${percentage}%`;
+
+    //Update selector left 
+    selector.style.left = `${percentage}%`;
+    selector.style.transform = `transtalteX(-${percentage})`;
+
+});
