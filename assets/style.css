@@ -230,3 +230,48 @@ button{
     border-radius: 25px;
     border: none;
 }
+
+/*Desktop*/
+
+@media(min-width:540px){
+    .title h1{
+        font-size:28px;
+    }
+    .tile h2{
+        font-size: 15px;
+    }
+
+    .title img{
+        top: -50%;
+    }
+    .pricing{
+        padding: 40px 48px;
+    }
+    .pricing{
+        flex-direction: row;
+        margin-bottom: 24px;
+    }
+    .price p{
+        margin-left: auto;
+    }
+    .billing{
+        flex-direction: row;
+    }
+
+    input[type="checkbox"]{
+        transform: rotate(0);
+    }
+    .tag{
+        top: -2px;
+        left: 75px;
+    }
+    .cta{
+        flex-direction: row;
+    }
+    .features{
+        align-items: flex-start;
+    }
+    button{
+        margin-left: auto;
+    }
+}
